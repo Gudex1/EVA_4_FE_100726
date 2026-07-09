@@ -16,7 +16,6 @@ const ExpenseForm = ({ addOrUpdateExpense, expenseToEdit, clearEdit }) => {
   }, [expenseToEdit]);
 
   const handleSubmit = (e) => {
-    e.submit(); // Previene la recarga de la página
     e.preventDefault();
 
     // Validación 1: Campos vacíos o nulos
