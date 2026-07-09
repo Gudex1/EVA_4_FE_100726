@@ -1,0 +1,104 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #0056b3;
+  --danger-color: #dc3545;
+  --warning-bg: #fff3cd;
+  --warning-border: #ffeeba;
+  --warning-text: #856404;
+}
+
+body {
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.total-container {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label { margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group select { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Estilo para el indicador visual de advertencia ($2.000.000) */
+.warning-limit {
+  background-color: var(--warning-bg) !important;
+  border: 2px solid var(--warning-text) !important;
+}
+
+.warning-text {
+  color: var(--warning-text);
+  font-size: 0.85em;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+.expense-item {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.btn-primary { background-color: var(--primary-color); }
+.btn-secondary { background-color: #6c757d; margin-left: 10px; }
+.btn-edit { background-color: #28a745; margin-right: 5px;}
+.btn-delete { background-color: var(--danger-color); }
+
+@media (max-width: 600px) {
+  .grid-layout { grid-template-columns: 1fr; }
+}
