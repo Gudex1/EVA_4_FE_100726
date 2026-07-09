@@ -102,3 +102,27 @@ button {
 @media (max-width: 600px) {
   .grid-layout { grid-template-columns: 1fr; }
 }
+
+.asignatura-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.alert-retraso {
+  border: 2px solid red;
+  background-color: #ffe5e5;
+}
+
+.alert-total {
+  border: 2px solid orange;
+  background-color: #fff3cd;
+}
+
+.formulario input, .formulario button {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+}
